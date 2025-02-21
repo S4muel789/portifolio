@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Certificados</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+        :root {
+            --cor-primaria: #000000;
+            --cor-secundaria: #f6f6f6;
+            --cor-terciaria: #22d4fd;
+            --fonte-primaria: 'Krona One', sans-serif;
+            --fonte-secundaria: 'Montserrat', sans-serif;
+            --tamanho-fonte-titulo: 36px;
+            --tamanho-fonte-texto: 24px;
+            --espacamento-padrao: 40px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            font-family: var(--fonte-secundaria);
+            font-size: var(--tamanho-fonte-texto);
+            font-weight: 400;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .cabecalho {
+            padding: 2% 0% 0% 15%;
+        }
+
+        .cabecalho__menu {
+            display: flex;
+            gap: 80px;
+        }
+
+        .cabecalho__menu__link {
+            font-family: var(--fonte-secundaria);
+            font-size: var(--tamanho-fonte-texto);
+            font-weight: 600;
+            color: var(--cor-terciaria);
+            text-decoration: none;
+        }
+
+        .apresentacao {
+            padding: 5% 15%;
+        }
+
+        .apresentacao__conteudo {
+            width: 100%;
+        }
+
+        .apresentacao__conteudo__titulo {
+            font-size: var(--tamanho-fonte-titulo);
+            font-family: var(--fonte-primaria);
+        }
+
+        .apresentacao__conteudo__texto {
+            font-size: var(--tamanho-fonte-texto);
+            font-family: var(--fonte-secundaria);
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery iframe {
+            width: 300px; /* Largura fixa para os iframes */
+            height: 400px; /* Altura fixa para os iframes */
+            border: 2px solid var(--cor-terciaria);
+            border-radius: 5px;
+        }
+
+        .rodape {
+            padding: 28px;
+            color: var(--cor-primaria);
+            background-color: var(--cor-terciaria);
+            text-align: center;
+            font-family: var(--fonte-secundaria);
+            font-size: var(--tamanho-fonte-texto);
+            font-weight: 400;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link"href="index.html">Home</a>
+            <a class="cabecalho__menu__link"href="about.html">Sobre Mim</a>
+            <a class="cabecalho__menu__link"href="curriculo.html">Curriculo</a>
+            <a class="cabecalho__menu__link"href="album.html">Galeria de Certificados</a>
+        </nav>
+    </div>
+
+    <main>
+        <div class="apresentacao">
+            <section class="apresentacao__conteudo">
+                <h1 class="apresentacao__conteudo__titulo">Galeria de Certificados</h1>
+                <p class="apresentacao__conteudo__texto">Aqui estão alguns dos meus certificados.</p>
+            </section>
+        </div>
+
+        <div class="gallery">
+            <iframe src="./assets/chat gpt otimizando a qualidade dos resultados.pdf"></iframe>
+            <iframe src="./assets/Criação_de_Site_Utilizando_Ferramentas_Google-Gere_o_seu_certificado_65270.pdf"></iframe>
+            <iframe src="/assets/explorando funções e Listas.pdf"></iframe>
+            <iframe src="./assets/html e css ambiente de desenvolvimento estrutura de arquivos e tag-alura-8horas.pdf"></iframe>
+            <iframe src="./assets/HTML e CSS Cabeçalho,footere Vriáveis CSS.pdf"></iframe>
+            <iframe src="./assets/logica de programação com javascript.pdf"></iframe>
+            <iframe src="./assets/praticando logica de programação alura 8horas.pdf"></iframe>
+            <iframe src="./assets/aprender a aprender técnicas para seu autodesenvolvimento.pdf"></iframe>
+            <iframe src="./assets/habitos da produtividade ás medatas pessoas.pdf"></iframe>
+            <!-- Adicione mais iframes conforme necessário -->
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Samuel Ladeia</p>
+    </footer>
+
+</body>
+</html>
